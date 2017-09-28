@@ -58,9 +58,6 @@ $ docker-compose exec php sh
 # vendor/bin/phpunit
 ```
 
-##### Todo
-* database testing
-
 ##### References
 * https://serversforhackers.com/s/docker-in-development
     * https://github.com/retroconduct/docker-lumen
