@@ -1,7 +1,6 @@
 FROM php:7.1-fpm-alpine
 
-# Install modules
-RUN apk add \
+RUN	apk update && apk add \
     curl
 
 # Install extentsions
@@ -12,5 +11,3 @@ RUN docker-php-ext-install \
 
 # Install Composer
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
-
-EXPOSE 9000
